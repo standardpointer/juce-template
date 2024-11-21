@@ -14,7 +14,7 @@ user_input=$(echo "$user_input" | tr '[:upper:]' '[:lower:]')
 if [[ "$user_input" == "y" ]]; then
     # Define source and destination paths
     src_file="build/{{ cookiecutter.project_name }}_artefacts/Release/VST3/{{ cookiecutter.product_name }}.vst3"
-    dest_dir="F:/Plugins/VST3"
+    dest_dir="{{ cookiecutter.custom_output_dir }}"
 
     # Ensure the source file exists
     if [ -d "$src_file" ]; then

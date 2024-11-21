@@ -24,11 +24,9 @@ juce_add_plugin({{ cookiecutter.project_name }}
 )
 
 if(WIN32)
-    set(USER_PLUGIN_OUTPUT_DIR "{{ cookiecutter.win_output_dir }}")
     set(JUCE_COPY_PLUGIN_AFTER_BUILD FALSE)
 else()
     set(JUCE_COPY_PLUGIN_AFTER_BUILD TRUE)
-    set(USER_PLUGIN_OUTPUT_DIR "{{ cookiecutter.macos_output_dir }}")
 endif()
 
 # Add src files
