@@ -1,0 +1,14 @@
+{
+  "project_name": "your_plugin_name (use underscores)",
+  "plugin_name": "{{ cookiecutter.project_name|replace('_', ' ')|title }}",
+  "product_name": "Name of the final binary, can differ from plugin_name",
+  "macos_output_dir": "Name of output directory for final VST binary (Optional if on Windows)",
+  "win_output_dir": "Name of output directory for final VST binary (Optional if on MacOS)",
+  "plugin_manufacturer": "4 character id with at least one uppercase character",
+  "code_name": "UID with 4 characters and at least one uppercase letter",
+  "author": "standardpointer",
+  "url": "https://youtu.be/dQw4w9WgXcQ",
+  "description": "A short description of your plugin",
+  "license": ["GPL-3.0-or-later", "ISC", "MIT"],
+  "\nDone\nWrite that plugin": "press enter to finish"
+}
